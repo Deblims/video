@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="section">
+        <div class="container" id="container">
+            <!--podia usar o preload="auto" que vai carregar o video na memoria do navegador assim que a pagina for carregada (o autoplay sobreescreve o preload.)-->
+            <video id="video1" loop src="./imagens/0326(1).mp4"></video>
+            <div id="controles" class="controle">
+                <img class="btn" onclick="retroceder()" src="./imagens/retroceder.png">
+                <img class="btn" onclick="avancar()" src="./imagens/avancar.png">
+                <img class="btn" onclick="diminuir_vel()" src="./imagens/menos.png">
+                <img class="btn" onclick="aumentar_vel()" src="./imagens/mais.png">
+                <img class="btn" onclick="pause()" src="./imagens/pause.png">
+                <img class="btn" onclick="play()" src="./imagens/play.png">
+                <img class="btn" onclick="stop()" src="./imagens/stop.png">
+
+
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
